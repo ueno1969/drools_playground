@@ -8,9 +8,18 @@ Drools PalyGround
 
 2.1 リソースディレクトリを作成
 
-  mkdir -p resources/META-INF
-  mkdir -p resources/rules
+  mkdir -p src/main/resources/META-INF
+  mkdir -p src/main/resources/rules
 
 2.2 pom.xml編集
   drools関連のライブラリを追加
 
+3. テストプログラム作成
+
+- resources/META-INF/kmodule.xmlでルールの場所を指定
+- 適当なサンプルプログラムを用意
+
+3.1 実行
+
+  $ mvn compile
+  $ mvn exec:java
